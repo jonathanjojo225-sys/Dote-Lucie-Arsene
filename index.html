@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#063f46">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ezoua & Kangah">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Ezoua & Kangah — 12 Décembre 2026</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+  --turq:#063f46;
+  --turq2:#075b62;
+  --turq3:#0b7477;
+  --gold:#d9b86c;
+  --gold2:#f2d99b;
+  --cream:#fffaf0;
+  --white:#ffffff;
+  --glass:rgba(255,255,255,.11);
+  --glass2:rgba(255,255,255,.18);
+  --border:rgba(242,217,155,.42);
+  --shadow:0 24px 70px rgba(0,0,0,.28);
+  --radius:32px;
+}
+
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+html{
+  scroll-behavior:smooth;
+  background:#031f24;
+}
+
+body{
+  margin:0;
+  color:var(--cream);
+  font-family:Montserrat,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 15% 5%,rgba(23,150,151,.30),transparent 28%),
+    radial-gradient(circle at 85% 25%,rgba(217,184,108,.16),transparent 25%),
+    linear-gradient(145deg,#021e23,#063f46 48%,#031f24);
+  overflow-x:hidden;
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.13;
+  z-index:1;
+  background-image:
+    linear-gradient(135deg,transparent 25%,var(--gold) 25%,var(--gold) 31%,transparent 31%,transparent 69%,var(--gold) 69%,var(--gold) 75%,transparent 75%),
+    linear-gradient(45deg,transparent 25%,var(--turq3) 25%,var(--turq3) 31%,transparent 31%,transparent 69%,var(--turq3) 69%,var(--turq3) 75%,transparent 75%);
+  background-size:72px 72px;
+  mix-blend-mode:screen;
+}
+
+body:after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:2;
+  background:linear-gradient(180deg,rgba(255,255,255,.03),transparent 30%,rgba(0,0,0,.16));
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button,input,select,textarea{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+.app{
+  position:relative;
+  z-index:3;
+  max-width:680px;
+  margin:auto;
+}
+
+section{
+  min-height:100svh;
+  padding:86px 20px 42px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.kente{
+  position:absolute;
+  pointer-events:none;
+  opacity:.27;
+  width:190px;
+  height:190px;
+  border:1px solid rgba(242,217,155,.5);
+  background:
+    linear-gradient(45deg,transparent 45%,var(--gold) 45%,var(--gold) 55%,transparent 55%),
+    linear-gradient(-45deg,transparent 45%,var(--gold) 45%,var(--gold) 55%,transparent 55%),
+    linear-gradient(90deg,transparent 43%,var(--turq3) 43%,var(--turq3) 57%,transparent 57%);
+  background-size:38px 38px;
+  transform:rotate(45deg);
+  filter:blur(.1px);
+}
+
+.kente.one{top:-65px;right:-75px}
+.kente.two{bottom:-70px;left:-80px}
+.kente.three{top:20%;left:-125px;transform:rotate(45deg) scale(.65)}
+.kente.four{bottom:14%;right:-125px;transform:rotate(45deg) scale(.65)}
+
+.glass{
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.15),rgba(255,255,255,.045));
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.20),
+    0 25px 65px rgba(0,0,0,.23);
+  backdrop-filter:blur(26px) saturate(145%);
+  -webkit-backdrop-filter:blur(26px) saturate(145%);
+}
+
+.hero{
+  text-align:center;
+  padding-top:110px;
+}
+
+.hero-card{
+  border-radius:44px;
+  padding:44px 24px;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero-card:before{
+  content:"";
+  position:absolute;
+  inset:12px;
+  border:1px solid rgba(242,217,155,.38);
+  border-radius:36px;
+  pointer-events:none;
+}
+
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.25em;
+  font-size:10px;
+  color:var(--gold2);
+  font-weight:600;
+}
+
+.script{
+  font-family:"Great Vibes",cursive;
+  font-size:54px;
+  line-height:1.05;
+  color:var(--gold2);
+  margin:22px 0 8px;
+}
+
+.names{
+  font-family:"Cormorant Garamond",serif;
+  font-size:39px;
+  line-height:1.02;
+  font-weight:500;
+}
+
+.amp{
+  font-family:"Great Vibes",cursive;
+  color:var(--gold2);
+  font-size:48px;
+  display:block;
+  margin:5px 0;
+}
+
+.date{
+  margin-top:26px;
+  padding-top:22px;
+  border-top:1px solid var(--border);
+  font-family:"Cormorant Garamond",serif;
+  font-size:25px;
+}
+
+.location-mini{
+  margin-top:8px;
+  font-size:11px;
+  letter-spacing:.08em;
+  opacity:.75;
+}
+
+.scroll{
+  margin-top:38px;
+  font-size:9px;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  opacity:.65;
+  animation:breathe 2.2s infinite;
+}
+
+@keyframes breathe{
+  50%{opacity:.28;transform:translateY(6px)}
+}
+
+.section-head{
+  margin-bottom:25px;
+  position:relative;
+}
+
+.section-number{
+  font-size:10px;
+  letter-spacing:.22em;
+  color:var(--gold);
+  text-transform:uppercase;
+}
+
+h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:42px;
+  font-weight:500;
+  line-height:1;
+  margin:8px 0 0;
+}
+
+h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:25px;
+  margin:0 0 9px;
+  color:var(--gold2);
+}
+
+p{
+  line-height:1.75;
+  font-size:13px;
+  opacity:.88;
+}
+
+.card{
+  border-radius:var(--radius);
+  padding:25px;
+  margin-bottom:14px;
+}
+
+.couple{
+  text-align:center;
+}
+
+.couple-names{
+  font-family:"Cormorant Garamond",serif;
+  font-size:35px;
+  margin:25px 0;
+}
+
+.couple-line{
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin:20px 0;
+}
+
+.calendar{
+  text-align:center;
+}
+
+.calendar-top{
+  font-size:12px;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  color:var(--gold2);
+}
+
+.calendar-day{
+  font-family:"Cormorant Garamond",serif;
+  font-size:100px;
+  line-height:.9;
+  margin:14px 0;
+}
+
+.calendar-month{
+  font-family:"Cormorant Garamond",serif;
+  font-size:27px;
+}
+
+.countdown{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px;
+  margin-top:20px;
+}
+
+.time-box{
+  padding:13px 4px;
+  border-radius:19px;
+  background:rgba(0,0,0,.15);
+  border:1px solid rgba(242,217,155,.2);
+}
+
+.time-box strong{
+  display:block;
+  font-family:"Cormorant Garamond",serif;
+  color:var(--gold2);
+  font-size:27px;
+}
+
+.time-box span{
+  display:block;
+  font-size:7px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  opacity:.65;
+  margin-top:3px;
+}
+
+.timeline{
+  position:relative;
+  padding-left:28px;
+}
+
+.timeline:before{
+  content:"";
+  position:absolute;
+  left:7px;
+  top:4px;
+  bottom:4px;
+  width:1px;
+  background:linear-gradient(var(--gold),transparent);
+}
+
+.event{
+  position:relative;
+  margin-bottom:22px;
+}
+
+.event:before{
+  content:"";
+  position:absolute;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:var(--gold);
+  left:-25px;
+  top:5px;
+  box-shadow:0 0 15px rgba(242,217,155,.55);
+}
+
+.event-time{
+  color:var(--gold2);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+
+.event-title{
+  font-family:"Cormorant Garamond",serif;
+  font-size:25px;
+  margin:4px 0;
+}
+
+.event-desc{
+  font-size:11px;
+  opacity:.68;
+  line-height:1.6;
+}
+
+.place-card{
+  padding:0;
+  overflow:hidden;
+}
+
+.place-top{
+  height:125px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+    linear-gradient(45deg,transparent 40%,rgba(217,184,108,.28) 40%,rgba(217,184,108,.28) 60%,transparent 60%),
+    linear-gradient(-45deg,transparent 40%,rgba(7,116,119,.55) 40%,rgba(7,116,119,.55) 60%,transparent 60%),
+    var(--turq);
+  background-size:48px 48px;
+}
+
+.place-icon{
+  width:62px;
+  height:62px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:rgba(255,255,255,.14);
+  border:1px solid var(--border);
+  backdrop-filter:blur(10px);
+  font-size:25px;
+}
+
+.place-content{
+  padding:22px;
+}
+
+.btn{
+  width:100%;
+  border:0;
+  padding:15px 18px;
+  border-radius:18px;
+  margin-top:10px;
+  font-weight:600;
+  font-size:12px;
+  color:#123d40;
+  background:linear-gradient(135deg,var(--gold2),var(--gold));
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+  transition:.2s;
+}
+
+.btn:active{
+  transform:scale(.97);
+}
+
+.btn.secondary{
+  background:rgba(255,255,255,.09);
+  color:var(--cream);
+  border:1px solid rgba(255,255,255,.18);
+}
+
+.dress{
+  text-align:center;
+}
+
+.dress-code{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.dress-item{
+  border-radius:27px;
+  min-height:180px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:13px;
+}
+
+.dress-color{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,.16),0 15px 30px rgba(0,0,0,.2);
+}
+
+.dress-color.turquoise{
+  background:linear-gradient(145deg,#0c8586,#063f46);
+}
+
+.dress-color.gold{
+  background:linear-gradient(145deg,#f5dda3,#b18b3c);
+}
+
+.dress-color.white{
+  background:#fff;
+  border:1px solid rgba(255,255,255,.45);
+}
+
+.dress-label{
+  font-family:"Cormorant Garamond",serif;
+  font-size:22px;
+}
+
+form{
+  display:grid;
+  gap:12px;
+}
+
+label{
+  display:block;
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  margin:0 0 6px 5px;
+  opacity:.65;
+}
+
+input,select,textarea{
+  width:100%;
+  color:var(--cream);
+  background:rgba(0,0,0,.16);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:17px;
+  outline:none;
+  padding:15px;
+  font-size:13px;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color:rgba(255,255,255,.42);
+}
+
+select option{
+  color:#123d40;
+}
+
+textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+.radio-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+.radio{
+  position:relative;
+}
+
+.radio input{
+  position:absolute;
+  opacity:0;
+}
+
+.radio span{
+  display:block;
+  text-align:center;
+  padding:13px 8px;
+  border-radius:15px;
+  background:rgba(0,0,0,.13);
+  border:1px solid rgba(255,255,255,.12);
+  font-size:11px;
+}
+
+.radio input:checked + span{
+  background:rgba(217,184,108,.2);
+  border-color:var(--gold);
+  color:var(--gold2);
+}
+
+.form-note{
+  font-size:9px;
+  opacity:.5;
+  line-height:1.5;
+}
+
+.success{
+  display:none;
+  text-align:center;
+  padding:20px;
+  border-radius:22px;
+  background:rgba(35,190,150,.10);
+  border:1px solid rgba(35,190,150,.28);
+  font-size:12px;
+}
+
+.guest-list{
+  display:grid;
+  gap:9px;
+}
+
+.guest-entry{
+  padding:14px;
+  border-radius:17px;
+  background:rgba(0,0,0,.12);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.guest-entry strong{
+  display:block;
+  color:var(--gold2);
+  font-family:"Cormorant Garamond",serif;
+  font-size:20px;
+}
+
+.guest-entry small{
+  display:block;
+  margin-top:3px;
+  opacity:.58;
+  font-size:9px;
+}
+
+.qr-wrap{
+  display:flex;
+  justify-content:center;
+  margin:25px 0;
+}
+
+#qrcode{
+  width:190px;
+  height:190px;
+  background:#fff;
+  border-radius:24px;
+  padding:12px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+}
+
+#qrcode img{
+  width:166px;
+  height:166px;
+}
+
+.whatsapp{
+  background:#25d366;
+  color:white;
+}
+
+.final{
+  text-align:center;
+}
+
+.final .script{
+  font-size:62px;
+}
+
+.footer{
+  text-align:center;
+  padding:30px 20px 45px;
+  font-size:8px;
+  letter-spacing:.13em;
+  opacity:.42;
+}
+
+.admin-trigger{
+  position:fixed;
+  bottom:14px;
+  right:14px;
+  z-index:20;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(0,0,0,.2);
+  color:rgba(255,255,255,.45);
+  backdrop-filter:blur(10px);
+  font-size:13px;
+}
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:100;
+  background:rgba(0,20,23,.72);
+  backdrop-filter:blur(22px);
+  padding:20px;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.modal.active{
+  display:flex;
+}
+
+.modal-card{
+  width:min(640px,100%);
+  max-height:88svh;
+  overflow:auto;
+  border-radius:34px;
+  padding:24px;
+  background:rgba(7,61,67,.92);
+  border:1px solid rgba(242,217,155,.28);
+  box-shadow:0 30px 90px rgba(0,0,0,.5);
+}
+
+.modal-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:18px;
+}
+
+.close{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(255,255,255,.07);
+  color:white;
+}
+
+.admin-actions{
+  display:grid;
+  gap:9px;
+  margin-top:14px;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px;
+  margin:15px 0;
+}
+
+.stat{
+  text-align:center;
+  padding:12px 5px;
+  border-radius:16px;
+  background:rgba(0,0,0,.14);
+}
+
+.stat strong{
+  display:block;
+  font-family:"Cormorant Garamond",serif;
+  font-size:25px;
+  color:var(--gold2);
+}
+
+.stat span{
+  font-size:7px;
+  opacity:.55;
+}
+
+.admin-table{
+  overflow:auto;
+  font-size:9px;
+  max-height:300px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th,td{
+  text-align:left;
+  padding:8px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  white-space:nowrap;
+}
+
+th{
+  color:var(--gold2);
+}
+
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:26px;
+  transform:translate(-50%,20px);
+  z-index:200;
+  opacity:0;
+  pointer-events:none;
+  background:rgba(0,0,0,.8);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:18px;
+  padding:13px 18px;
+  font-size:11px;
+  transition:.3s;
+  backdrop-filter:blur(15px);
+}
+
+.toast.show{
+  opacity:1;
+  transform:translate(-50%,0);
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+
+.reveal.visible{
+  opacity:1;
+  transform:none;
+}
+
+@media(min-width:700px){
+  body{
+    background-attachment:fixed;
+  }
+
+  section{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .modal{
+    align-items:center;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{
+    scroll-behavior:auto!important;
+    animation:none!important;
+    transition:none!important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="app">
+
+<!-- 01 ACCUEIL -->
+<section class="hero" id="accueil">
+  <div class="kente one"></div>
+  <div class="kente two"></div>
+
+  <div class="hero-card glass reveal">
+    <div class="eyebrow">Invitation traditionnelle ivoirienne</div>
+
+    <div class="script">La célébration de notre union</div>
+
+    <div class="names">
+      Ezoua Kouao Arsene
+      <span class="amp">&amp;</span>
+      Kangah Adelatchi Lucie
+    </div>
+
+    <div class="date">
+      Samedi 12 Décembre 2026
+    </div>
+
+    <div class="location-mini">
+      DOTE TRADITIONNELLE · RÉCEPTION
+    </div>
+
+    <div class="scroll">Faire défiler ↓</div>
+  </div>
+</section>
+
+<!-- 02 COUPLE -->
+<section id="couple">
+  <div class="kente three"></div>
+
+  <div class="section-head reveal">
+    <div class="section-number">02 · Notre histoire</div>
+    <h2>Le Couple</h2>
+  </div>
+
+  <div class="card glass couple reveal">
+    <div class="eyebrow">Deux familles · Une alliance · Une histoire</div>
+
+    <div class="couple-names">
+      Ezoua Kouao Arsene<br>
+      <span style="color:var(--gold2);font-size:26px;">&amp;</span><br>
+      Kangah Adelatchi Lucie
+    </div>
+
+    <div class="couple-line"></div>
+
+    <p>
+      Avec beaucoup de joie et de gratitude, nous vous invitons
+      à partager avec nous une journée particulière, placée sous
+      le signe de l'amour, de la famille, de la tradition et du
+      partage.
+    </p>
+
+    <p>
+      Cette célébration sera l'occasion de réunir nos familles
+      autour de la dote traditionnelle ivoirienne, avant de
+      prolonger cette belle journée lors de la réception.
+    </p>
+  </div>
+</section>
+
+<!-- 03 SAVE THE DATE -->
+<section id="date">
+  <div class="section-head reveal">
+    <div class="section-number">03 · Save the Date</div>
+    <h2>Réservez la date</h2>
+  </div>
+
+  <div class="card glass calendar reveal">
+    <div class="calendar-top">Samedi</div>
+    <div class="calendar-day">12</div>
+    <div class="calendar-month">Décembre 2026</div>
+
+    <div class="countdown" id="countdown">
+      <div class="time-box"><strong id="days">--</strong><span>Jours</span></div>
+      <div class="time-box"><strong id="hours">--</strong><span>Heures</span></div>
+      <div class="time-box"><strong id="minutes">--</strong><span>Minutes</span></div>
+      <div class="time-box"><strong id="seconds">--</strong><span>Secondes</span></div>
+    </div>
+  </div>
+
+  <button class="btn secondary reveal" onclick="addCalendar()">
+    ＋ Ajouter à mon calendrier
+  </button>
+</section>
+
+<!-- 04 PROGRAMME -->
+<section id="programme">
+  <div class="kente four"></div>
+
+  <div class="section-head reveal">
+    <div class="section-number">04 · Le programme</div>
+    <h2>Une journée de tradition</h2>
+  </div>
+
+  <div class="card glass reveal">
+    <div class="timeline">
+
+      <div class="event">
+        <div class="event-time">MATIN · 09H00</div>
+        <div class="event-title">Accueil des parents</div>
+        <div class="event-desc">
+          Arrivée et accueil des familles, installation et
+          présentation des différentes délégations.
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">MATIN · 10H30</div>
+        <div class="event-title">Cérémonie de la dote</div>
+        <div class="event-desc">
+          Ouverture des échanges traditionnels, présentation
+          des familles et remise symbolique de la dote.
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">APRÈS-MIDI · 13H00</div>
+        <div class="event-title">Cocktail &amp; partage</div>
+        <div class="event-desc">
+          Moment convivial autour d'un repas et de boissons.
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">APRÈS-MIDI · 15H00</div>
+        <div class="event-title">Réception</div>
+        <div class="event-desc">
+          Célébration, ambiance festive, photos de famille,
+          musique et moments de partage.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 05 LIEUX -->
+<section id="lieux">
+  <div class="section-head reveal">
+    <div class="section-number">05 · Les lieux</div>
+    <h2>Nous rejoindre</h2>
+  </div>
+
+  <div class="card glass place-card reveal">
+    <div class="place-top">
+      <div class="place-icon">⌖</div>
+    </div>
+
+    <div class="place-content">
+      <h3>Dote traditionnelle</h3>
+      <p>
+        Lieu de la cérémonie traditionnelle.<br>
+        <strong>Adresse à renseigner</strong>
+      </p>
+
+      <!-- Remplacez le lien ci-dessous par l'adresse Google Maps réelle -->
+      <a
+        class="btn"
+        href="https://www.google.com/maps/search/?api=1&query=Lieu+de+la+dote"
+        target="_blank"
+        rel="noopener">
+        Ouvrir l'itinéraire
+      </a>
+    </div>
+  </div>
+
+  <div class="card glass place-card reveal">
+    <div class="place-top">
+      <div class="place-icon">✦</div>
+    </div>
+
+    <div class="place-content">
+      <h3>Réception</h3>
+      <p>
+        Lieu de la réception.<br>
+        <strong>Adresse à renseigner</strong>
+      </p>
+
+      <!-- Remplacez le lien ci-dessous par l'adresse Google Maps réelle -->
+      <a
+        class="btn"
+        href="https://www.google.com/maps/search/?api=1&query=Lieu+de+la+reception"
+        target="_blank"
+        rel="noopener">
+        Ouvrir l'itinéraire
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 06 DRESS CODE -->
+<section id="dress">
+  <div class="kente one"></div>
+
+  <div class="section-head reveal">
+    <div class="section-number">06 · Dress code</div>
+    <h2>Code vestimentaire</h2>
+  </div>
+
+  <div class="card glass dress reveal">
+    <p>
+      Pour accompagner l'élégance de cette journée,
+      nous vous invitons à respecter les couleurs de la célébration.
+    </p>
+
+    <div class="dress-code">
+      <div class="dress-item glass">
+        <div class="dress-color turquoise"></div>
+        <div class="dress-label">Turquoise</div>
+      </div>
+
+      <div class="dress-item glass">
+        <div class="dress-color gold"></div>
+        <div class="dress-label">Or champagne</div>
+      </div>
+
+      <div class="dress-item glass" style="grid-column:1/-1">
+        <div class="dress-color white"></div>
+        <div class="dress-label">Réception · Blanc</div>
+      </div>
+    </div>
+
+    <p class="form-note">
+      ✦ Dote : touches turquoise et or recommandées.<br>
+      ✦ Réception : tenue blanche privilégiée.
+    </p>
+  </div>
+</section>
+
+<!-- 07 RSVP -->
+<section id="rsvp">
+  <div class="section-head reveal">
+    <div class="section-number">07 · RSVP</div>
+    <h2>Confirmer ma présence</h2>
+  </div>
+
+  <div class="card glass reveal">
+
+    <form id="rsvpForm">
+
+      <div>
+        <label>Nom &amp; prénom</label>
+        <input id="rsvpName" required placeholder="Votre nom complet">
+      </div>
+
+      <div>
+        <label>Présence</label>
+        <div class="radio-grid">
+          <label class="radio">
+            <input type="radio" name="presence" value="Oui" required>
+            <span>✓ Je serai présent(e)</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="presence" value="Non">
+            <span>Je ne pourrai pas venir</span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label>Nombre de personnes</label>
+        <select id="rsvpGuests">
+          <option value="1">1 personne</option>
+          <option value="2">2 personnes</option>
+          <option value="3">3 personnes</option>
+          <option value="4">4 personnes</option>
+          <option value="5">5 personnes</option>
+          <option value="6">6 personnes</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Téléphone / WhatsApp</label>
+        <input id="rsvpPhone" type="tel" placeholder="+225 ...">
+      </div>
+
+      <button class="btn" type="submit">
+        Confirmer ma présence
+      </button>
+
+    </form>
+
+    <div class="success" id="rsvpSuccess">
+      ✓ Votre réponse a bien été enregistrée sur cet appareil.
+    </div>
+
+    <p class="form-note">
+      Vos informations sont enregistrées localement dans ce navigateur.
+    </p>
+  </div>
+</section>
+
+<!-- 08 BOISSONS / ALLERGIES -->
+<section id="preferences">
+  <div class="section-head reveal">
+    <div class="section-number">08 · Préférences</div>
+    <h2>Vos préférences</h2>
+  </div>
+
+  <div class="card glass reveal">
+
+    <form id="prefForm">
+
+      <div>
+        <label>Nom &amp; prénom</label>
+        <input id="prefName" required placeholder="Votre nom complet">
+      </div>
+
+      <div>
+        <label>Boisson préférée</label>
+        <select id="drink">
+          <option value="">Sélectionner</option>
+          <option>Eau</option>
+          <option>Jus naturel</option>
+          <option>Jus de bissap</option>
+          <option>Jus de gingembre</option>
+          <option>Boisson gazeuse</option>
+          <option>Cocktail sans alcool</option>
+          <option>Autre</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Allergies / restrictions alimentaires</label>
+        <textarea id="allergies" placeholder="Précisez si nécessaire..."></textarea>
+      </div>
+
+      <button class="btn" type="submit">
+        Enregistrer mes préférences
+      </button>
+
+    </form>
+
+    <div class="success" id="prefSuccess">
+      ✓ Préférences enregistrées.
+    </div>
+  </div>
+</section>
+
+<!-- 09 LIVRE D'OR -->
+<section id="livre">
+  <div class="kente two"></div>
+
+  <div class="section-head reveal">
+    <div class="section-number">09 · Livre d'or</div>
+    <h2>Un mot pour nous</h2>
+  </div>
+
+  <div class="card glass reveal">
+
+    <form id="guestForm">
+
+      <div>
+        <label>Votre nom</label>
+        <input id="guestName" required placeholder="Votre nom">
+      </div>
+
+      <div>
+        <label>Votre message</label>
+        <textarea id="guestMessage" required placeholder="Écrivez un petit mot aux mariés..."></textarea>
+      </div>
+
+      <button class="btn" type="submit">
+        ✦ Signer le livre d'or
+      </button>
+
+    </form>
+
+    <div class="success" id="guestSuccess">
+      ✓ Votre message a été enregistré.
+    </div>
+  </div>
+
+  <div class="guest-list" id="guestList"></div>
+</section>
+
+<!-- 10 FINAL -->
+<section id="final" class="final">
+  <div class="kente three"></div>
+
+  <div class="section-head reveal">
+    <div class="section-number">10 · À très bientôt</div>
+  </div>
+
+  <div class="card glass reveal">
+
+    <div class="eyebrow">Ezoua &amp; Kangah</div>
+
+    <div class="script">Merci d'être avec nous</div>
+
+    <p>
+      Votre présence, vos prières et vos pensées rendent
+      cette journée encore plus précieuse.
+    </p>
+
+    <div class="qr-wrap">
+      <div id="qrcode">
+        <img
+          alt="QR Code de l'invitation"
+          src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fexample.com%2Finvitation">
+      </div>
+    </div>
+
+    <p class="form-note">
+      Scannez pour ouvrir l'invitation.
+    </p>
+
+    <button class="btn whatsapp" onclick="shareWhatsApp()">
+      ♡ Partager sur WhatsApp
+    </button>
+
+    <button class="btn secondary" onclick="copyInvitation()">
+      ⧉ Copier le lien de l'invitation
+    </button>
+
+  </div>
+</section>
+
+<div class="footer">
+  EZOUA KOUAO ARSENE &amp; KANGAH ADELATCHI LUCIE · 12.12.2026
+</div>
+
+</main>
+
+<!-- ADMIN -->
+<button class="admin-trigger" onclick="openAdmin()" aria-label="Administration">⚙</button>
+
+<div class="modal" id="adminModal">
+  <div class="modal-card">
+
+    <div class="modal-header">
+      <div>
+        <div class="section-number">Administration</div>
+        <h3>Gestion des réponses</h3>
+      </div>
+      <button class="close" onclick="closeAdmin()">×</button>
+    </div>
+
+    <div id="loginArea">
+
+      <form id="adminLogin">
+        <div>
+          <label>Mot de passe</label>
+          <input id="adminPassword" type="password" placeholder="Mot de passe">
+        </div>
+
+        <button class="btn" type="submit">
+          Accéder
+        </button>
+      </form>
+
+    </div>
+
+    <div id="adminArea" style="display:none">
+
+      <div class="stats">
+        <div class="stat">
+          <strong id="statRsvp">0</strong>
+          <span>RSVP</span>
+        </div>
+        <div class="stat">
+          <strong id="statPresent">0</strong>
+          <span>Présents</span>
+        </div>
+        <div class="stat">
+          <strong id="statMessages">0</strong>
+          <span>Messages</span>
+        </div>
+      </div>
+
+      <div class="admin-actions">
+        <button class="btn" onclick="exportCSV()">
+          ↓ Exporter toutes les données CSV
+        </button>
+
+        <button class="btn secondary" onclick="refreshAdmin()">
+          ↻ Actualiser
+        </button>
+
+        <button class="btn secondary" onclick="clearData()">
+          Effacer les données locales
+        </button>
+      </div>
+
+      <div class="admin-table" id="adminTable"></div>
+
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   CONFIGURATION
+   ============================================================ */
+
+const CONFIG = {
+  couple: "Ezoua Kouao Arsene & Kangah Adelatchi Lucie",
+  date: "2026-12-12T10:00:00",
+  adminPassword: "dote2026",
+
+  /*
+   IMPORTANT :
+   Remplacez cette URL par l'URL finale de votre invitation.
+   Exemple :
+   https://votresite.com/invitation.html
+  */
+  invitationURL: window.location.href
+};
+
+/* ============================================================
+   UTILITAIRES
+   ============================================================ */
+
+const $ = id => document.getElementById(id);
+
+function toast(message){
+  const el = $("toast");
+  el.textContent = message;
+  el.classList.add("show");
+
+  clearTimeout(window.toastTimer);
+
+  window.toastTimer = setTimeout(()=>{
+    el.classList.remove("show");
+  },2500);
+}
+
+function getData(key){
+  try{
+    return JSON.parse(localStorage.getItem(key)) || [];
+  }catch(e){
+    return [];
+  }
+}
+
+function saveData(key,data){
+  localStorage.setItem(key,JSON.stringify(data));
+}
+
+/* ============================================================
+   COUNTDOWN
+   ============================================================ */
+
+function updateCountdown(){
+
+  const target = new Date(CONFIG.date).getTime();
+  const now = Date.now();
+  const distance = target-now;
+
+  if(distance <= 0){
+    $("days").textContent = "0";
+    $("hours").textContent = "0";
+    $("minutes").textContent = "0";
+    $("seconds").textContent = "0";
+    return;
+  }
+
+  const days = Math.floor(distance/(1000*60*60*24));
+  const hours = Math.floor(
+    (distance%(1000*60*60*24))/(1000*60*60)
+  );
+  const minutes = Math.floor(
+    (distance%(1000*60*60))/(1000*60)
+  );
+  const seconds = Math.floor(
+    (distance%(1000*60))/1000
+  );
+
+  $("days").textContent = String(days).padStart(2,"0");
+  $("hours").textContent = String(hours).padStart(2,"0");
+  $("minutes").textContent = String(minutes).padStart(2,"0");
+  $("seconds").textContent = String(seconds).padStart(2,"0");
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+/* ============================================================
+   RSVP
+   ============================================================ */
+
+$("rsvpForm").addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+  const presence =
+    document.querySelector('input[name="presence"]:checked')?.value || "";
+
+  const record = {
+    type:"RSVP",
+    date:new Date().toISOString(),
+    name:$("rsvpName").value.trim(),
+    presence,
+    guests:$("rsvpGuests").value,
+    phone:$("rsvpPhone").value.trim()
+  };
+
+  const data = getData("wedding_rsvp");
+
+  data.push(record);
+
+  saveData("wedding_rsvp",data);
+
+  $("rsvpForm").reset();
+  $("rsvpSuccess").style.display = "block";
+
+  toast("Réponse enregistrée ✓");
+
+  setTimeout(()=>{
+    $("rsvpSuccess").style.display = "none";
+  },3500);
+});
+
+/* ============================================================
+   PREFERENCES
+   ============================================================ */
+
+$("prefForm").addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+  const record = {
+    type:"PREFERENCES",
+    date:new Date().toISOString(),
+    name:$("prefName").value.trim(),
+    drink:$("drink").value,
+    allergies:$("allergies").value.trim()
+  };
+
+  const data = getData("wedding_preferences");
+
+  data.push(record);
+
+  saveData("wedding_preferences",data);
+
+  $("prefForm").reset();
+  $("prefSuccess").style.display = "block";
+
+  toast("Préférences enregistrées ✓");
+
+  setTimeout(()=>{
+    $("prefSuccess").style.display = "none";
+  },3500);
+});
+
+/* ============================================================
+   LIVRE D'OR
+   ============================================================ */
+
+function renderGuestBook(){
+
+  const data = getData("wedding_guestbook");
+  const container = $("guestList");
+
+  container.innerHTML = "";
+
+  data.slice().reverse().forEach(item=>{
+
+    const div = document.createElement("div");
+
+    div.className = "guest-entry glass";
+
+    div.innerHTML = `
+      <strong>${escapeHTML(item.name)}</strong>
+      <small>${escapeHTML(item.message)}</small>
+    `;
+
+    container.appendChild(div);
+  });
+}
+
+$("guestForm").addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+  const record = {
+    type:"LIVRE_D_OR",
+    date:new Date().toISOString(),
+    name:$("guestName").value.trim(),
+    message:$("guestMessage").value.trim()
+  };
+
+  const data = getData("wedding_guestbook");
+
+  data.push(record);
+
+  saveData("wedding_guestbook",data);
+
+  $("guestForm").reset();
+
+  $("guestSuccess").style.display = "block";
+
+  renderGuestBook();
+
+  toast("Votre message a été ajouté ✓");
+
+  setTimeout(()=>{
+    $("guestSuccess").style.display = "none";
+  },3500);
+});
+
+function escapeHTML(value){
+
+  return String(value)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+
+renderGuestBook();
+
+/* ============================================================
+   WHATSAPP
+   ============================================================ */
+
+function shareWhatsApp(){
+
+  const text =
+`💍 EZOUA KOUAO ARSENE & KANGAH ADELATCHI LUCIE
+
+Nous avons le plaisir de vous inviter à partager notre journée de célébration.
+
+📅 Samedi 12 Décembre 2026
+
+🤍 Dote traditionnelle ivoirienne + réception
+
+✨ Nous avons hâte de vous retrouver.
+
+${CONFIG.invitationURL}`;
+
+  const url =
+    "https://wa.me/?text="+encodeURIComponent(text);
+
+  window.open(url,"_blank");
+}
+
+/* ============================================================
+   COPIER LIEN
+   ============================================================ */
+
+async function copyInvitation(){
+
+  try{
+
+    await navigator.clipboard.writeText(CONFIG.invitationURL);
+
+    toast("Lien copié ✓");
+
+  }catch(e){
+
+    const temp = document.createElement("input");
+
+    temp.value = CONFIG.invitationURL;
+
+    document.body.appendChild(temp);
+
+    temp.select();
+
+    document.execCommand("copy");
+
+    temp.remove();
+
+    toast("Lien copié ✓");
+  }
+}
+
+/* ============================================================
+   CALENDRIER
+   ============================================================ */
+
+function addCalendar(){
+
+  const start = "20261212T100000";
+  const end   = "20261212T180000";
+
+  const ics =
+`BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//EzouaKangah//Wedding//FR
+BEGIN:VEVENT
+UID:ezoua-kangah-2026@example.com
+DTSTAMP:20261007T000000Z
+DTSTART:${start}
+DTEND:${end}
+SUMMARY:Dote traditionnelle & réception — Ezoua & Kangah
+DESCRIPTION:Dote traditionnelle ivoirienne et réception de mariage.
+END:VEVENT
+END:VCALENDAR`;
+
+  const blob =
+    new Blob([ics],{type:"text/calendar;charset=utf-8"});
+
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+
+  a.href = url;
+  a.download = "Ezoua-Kangah-12-Decembre-2026.ics";
+
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  URL.revokeObjectURL(url);
+
+  toast("Calendrier prêt ✓");
+}
+
+/* ============================================================
+   ADMIN
+   ============================================================ */
+
+function openAdmin(){
+
+  $("adminModal").classList.add("active");
+
+  $("adminPassword").value = "";
+
+  $("loginArea").style.display = "block";
+  $("adminArea").style.display = "none";
+}
+
+function closeAdmin(){
+
+  $("adminModal").classList.remove("active");
+}
+
+$("adminLogin").addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+  if($("adminPassword").value === CONFIG.adminPassword){
+
+    $("loginArea").style.display = "none";
+    $("adminArea").style.display = "block";
+
+    refreshAdmin();
+
+  }else{
+
+    toast("Mot de passe incorrect");
+  }
+});
+
+function refreshAdmin(){
+
+  const rsvp = getData("wedding_rsvp");
+  const prefs = getData("wedding_preferences");
+  const messages = getData("wedding_guestbook");
+
+  const present =
+    rsvp.filter(x=>x.presence==="Oui").length;
+
+  $("statRsvp").textContent = rsvp.length;
+  $("statPresent").textContent = present;
+  $("statMessages").textContent = messages.length;
+
+  let rows = [];
+
+  rsvp.forEach(x=>{
+    rows.push({
+      type:"RSVP",
+      date:x.date,
+      name:x.name,
+      presence:x.presence,
+      guests:x.guests,
+      phone:x.phone,
+      drink:"",
+      allergies:"",
+      message:""
+    });
+  });
+
+  prefs.forEach(x=>{
+    rows.push({
+      type:"PREFERENCES",
+      date:x.date,
+      name:x.name,
+      presence:"",
+      guests:"",
+      phone:"",
+      drink:x.drink,
+      allergies:x.allergies,
+      message:""
+    });
+  });
+
+  messages.forEach(x=>{
+    rows.push({
+      type:"LIVRE_D_OR",
+      date:x.date,
+      name:x.name,
+      presence:"",
+      guests:"",
+      phone:"",
+      drink:"",
+      allergies:"",
+      message:x.message
+    });
+  });
+
+  let html = `
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Nom</th>
+          <th>Présence</th>
+          <th>Pers.</th>
+          <th>Boisson</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  rows.forEach(x=>{
+
+    html += `
+      <tr>
+        <td>${escapeHTML(x.type)}</td>
+        <td>${escapeHTML(x.name)}</td>
+        <td>${escapeHTML(x.presence)}</td>
+        <td>${escapeHTML(x.guests)}</td>
+        <td>${escapeHTML(x.drink)}</td>
+        <td>${escapeHTML(x.message)}</td>
+      </tr>
+    `;
+  });
+
+  html += "</tbody></table>";
+
+  $("adminTable").innerHTML =
+    rows.length ? html : "<p>Aucune donnée enregistrée.</p>";
+}
+
+/* ============================================================
+   EXPORT CSV
+   ============================================================ */
+
+function csvEscape(value){
+
+  const str = String(value ?? "");
+
+  return `"${str.replaceAll('"','""')}"`;
+}
+
+function exportCSV(){
+
+  const rsvp = getData("wedding_rsvp");
+  const prefs = getData("wedding_preferences");
+  const messages = getData("wedding_guestbook");
+
+  const rows = [];
+
+  rows.push([
+    "Type",
+    "Date",
+    "Nom",
+    "Présence",
+    "Nombre de personnes",
+    "Téléphone",
+    "Boisson",
+    "Allergies",
+    "Message"
+  ]);
+
+  rsvp.forEach(x=>{
+
+    rows.push([
+      "RSVP",
+      x.date,
+      x.name,
+      x.presence,
+      x.guests,
+      x.phone,
+      "",
+      "",
+      ""
+    ]);
+  });
+
+  prefs.forEach(x=>{
+
+    rows.push([
+      "PREFERENCES",
+      x.date,
+      x.name,
+      "",
+      "",
+      "",
+      x.drink,
+      x.allergies,
+      ""
+    ]);
+  });
+
+  messages.forEach(x=>{
+
+    rows.push([
+      "LIVRE_D_OR",
+      x.date,
+      x.name,
+      "",
+      "",
+      "",
+      "",
+      "",
+      x.message
+    ]);
+  });
+
+  const csv =
+    "\uFEFF" +
+    rows
+      .map(row=>row.map(csvEscape).join(";"))
+      .join("\n");
+
+  const blob =
+    new Blob([csv],{
+      type:"text/csv;charset=utf-8;"
+    });
+
+  const url =
+    URL.createObjectURL(blob);
+
+  const a =
+    document.createElement("a");
+
+  a.href = url;
+  a.download =
+    "Ezoua-Kangah-reponses.csv";
+
+  document.body.appendChild(a);
+
+  a.click();
+
+  a.remove();
+
+  URL.revokeObjectURL(url);
+
+  toast("CSV exporté ✓");
+}
+
+/* ============================================================
+   EFFACER DONNÉES
+   ============================================================ */
+
+function clearData(){
+
+  const confirmation =
+    confirm(
+      "Supprimer toutes les réponses enregistrées sur cet appareil ?"
+    );
+
+  if(!confirmation) return;
+
+  localStorage.removeItem("wedding_rsvp");
+  localStorage.removeItem("wedding_preferences");
+  localStorage.removeItem("wedding_guestbook");
+
+  refreshAdmin();
+  renderGuestBook();
+
+  toast("Données supprimées");
+}
+
+/* ============================================================
+   ANIMATIONS AU SCROLL
+   ============================================================ */
+
+const observer =
+  new IntersectionObserver(
+    entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold:.12
+    }
+  );
+
+document
+  .querySelectorAll(".reveal")
+  .forEach(el=>observer.observe(el));
+
+/* ============================================================
+   QR CODE
+   ============================================================ */
+
+/*
+   Le QR affiché utilise automatiquement l'URL de la page.
+   Lorsque vous hébergez ce fichier, remplacez l'URL de secours
+   dans l'image par votre URL finale si nécessaire.
+*/
+
+(function(){
+
+  const qr = $("qrcode");
+
+  const currentURL =
+    encodeURIComponent(CONFIG.invitationURL);
+
+  const img = qr.querySelector("img");
+
+  if(img){
+    img.src =
+      "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data="+currentURL;
+  }
+
+})();
+
+/* ============================================================
+   SWIPE / APP-LIKE EXPERIENCE
+   ============================================================ */
+
+let lastScroll = 0;
+
+window.addEventListener(
+  "scroll",
+  ()=>{
+    const current = window.scrollY;
+
+    if(Math.abs(current-lastScroll)>30){
+      document.body.classList.add("scrolling");
+      lastScroll=current;
+    }
+  },
+  {passive:true}
+);
+
+/* ============================================================
+   FERMETURE MODAL
+   ============================================================ */
+
+$("adminModal").addEventListener("click",function(e){
+
+  if(e.target === this){
+    closeAdmin();
+  }
+});
+
+/* ============================================================
+   VIBRATION LÉGÈRE SUR LES BOUTONS
+   ============================================================ */
+
+document
+  .querySelectorAll("button,.btn")
+  .forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+      if(
+        navigator.vibrate &&
+        !window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches
+      ){
+        navigator.vibrate(8);
+      }
+
+    });
+  });
+
+</script>
+
+</body>
+</html>
